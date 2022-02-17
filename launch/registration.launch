@@ -1,0 +1,11 @@
+<launch>
+
+	<node name="registration_node" pkg="registration" type="registration" output="screen">
+	</node>
+	
+	<node name="rviz" pkg="rviz" type="rviz" output="screen">
+	</node>
+	
+	<node pkg="tf" type="static_transform_publisher" name="map_to_baselink_tf" args="30 30 0 0 0 0 map base_link 10" />
+
+</launch>
